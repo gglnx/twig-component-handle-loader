@@ -37,7 +37,7 @@ Then you can use this loader directly with Twig:
 ```php
 require_once '/path/to/vendor/autoload.php';
 
-$loader = new \Gglnx\TwigComponentHandleLoader\Loader\TwigComponentHandleLoader('../path-to-my-components');
+$loader = new \Gglnx\TwigComponentHandleLoader\Loader\ComponentHandleLoader('../path-to-my-components');
 $twig = new \Twig\Environment($loader);
 ```
 
