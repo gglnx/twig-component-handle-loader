@@ -1,0 +1,35 @@
+{
+  "name": "gglnx/twig-component-handle-loader",
+  "description": "Load Twig templates using Fractal-style component handles",
+  "type": "library",
+  "keywords": ["twig", "twig-loader"],
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dennis Morhardt",
+      "email": "info@dennismorhardt.de",
+      "homepage": "https://dennismorhardt.de/"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/gglnx/twig-component-handle-loader/issues?state=open",
+    "source": "https://github.com/gglnx/twig-component-handle-loader",
+    "docs": "https://github.com/gglnx/twig-component-handle-loader"
+  },
+  "require": {
+    "php": ">=7.2.5",
+    "twig/twig": "^2.14"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.6"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Gglnx\\TwigComponentHandleLoader\\": "src/"
+    }
+  }
+}
