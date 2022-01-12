@@ -53,7 +53,7 @@ class ComponentHandleLoader implements LoaderInterface
     /**
      * @inheritdoc
      */
-    public function getSourceContext($name)
+    public function getSourceContext(string $name): Source
     {
         $path = $this->findTemplate($name);
 
@@ -63,7 +63,7 @@ class ComponentHandleLoader implements LoaderInterface
     /**
      * @inheritdoc
      */
-    public function getCacheKey($name)
+    public function getCacheKey(string $name): string
     {
         $path = $this->findTemplate($name);
         $len = strlen($this->pathToComponents);
@@ -78,7 +78,7 @@ class ComponentHandleLoader implements LoaderInterface
     /**
      * @inheritdoc
      */
-    public function isFresh($name, $time)
+    public function isFresh(string $name, int $time): bool
     {
         $path = $this->findTemplate($name);
 
@@ -88,7 +88,7 @@ class ComponentHandleLoader implements LoaderInterface
     /**
      * @inheritdoc
      */
-    public function exists($name)
+    public function exists(string $name)
     {
         return $this->findTemplate($name, false) !== null;
     }

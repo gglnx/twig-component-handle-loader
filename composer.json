@@ -19,7 +19,7 @@
   },
   "require": {
     "php": ">=7.2.5",
-    "twig/twig": "^2.14"
+    "twig/twig": "^3.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6"
