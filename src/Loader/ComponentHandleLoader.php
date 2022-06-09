@@ -105,7 +105,7 @@ class ComponentHandleLoader implements LoaderInterface
     {
         try {
             // Throw error if name doesn't start with '@'
-            if ($name[0] !== '@') {
+            if (strpos($name, '@') !== 0) {
                 throw new LoaderError(sprintf(
                     'Template name "%s" does not support with @ as needed for component handle.',
                     $name
