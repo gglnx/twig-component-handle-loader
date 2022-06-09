@@ -3,7 +3,7 @@
   "description": "Load Twig templates using Fractal-style component handles",
   "type": "library",
   "keywords": ["twig", "twig-loader"],
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "authors": [
     {
